@@ -7,8 +7,8 @@ const Login =() => {
 
     return(
         <>
-        <form className="form" onSubmit={handleSubmit(customSubmit)}>
-            <div className="form__item">
+        <form className="form-login" onSubmit={handleSubmit(customSubmit)}>
+            <div classNem="User">
                 <label>Usuario</label>
                 <input
                     //{...register("User", { required: true })} 
@@ -16,7 +16,7 @@ const Login =() => {
                 />
                 {errors.User && <p>Usuario no puede estar vacio</p>}
             </div>
-            <div className="form__item">
+            <div>
                 <label>Contraseña</label>
                 <input
                     //{...register("Pass", { required: true })} 
@@ -24,13 +24,11 @@ const Login =() => {
                 />
                 {errors.Pass && <p>Contraseña no puede estar vacio</p>}
             </div>
-            <div>
                 <input type="submit" value="Login" />
-            </div>
-        </form>
-        <div>
+                </form>
+            <div>
             <Link to="/registro">¿Aún no tienes cuenta? Regístrate</Link>
-        </div>
+            </div>
             </>
 
     )

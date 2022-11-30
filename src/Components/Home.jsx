@@ -1,7 +1,8 @@
 
 const Home =() => {
     return(
-        <h1>Este es el Home</h1>
+        <h1>Bienvenido</h1>,
+        <h2>Con InstaYa podra programar la recogida de sus paquetes.</h2>
     )
 
 }
